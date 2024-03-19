@@ -1,20 +1,23 @@
-///*
-// * Copyright (c) Icanio
-// */
-//
-//package com.example.compass.controller;
-//
-//import com.example.compass.dto.GenericResponse;
-//import com.example.compass.dto.UserDTO;
-//import com.example.compass.services.UserServices;
-//import org.springframework.web.bind.annotation.*;
-//
-//@RestController
-//@CrossOrigin
-//@RequestMapping("/api/v1/users")
-//public class UserController {
-//
-//
+/*
+ * Copyright (c) Icanio
+ */
+
+package com.example.compass.controller;
+
+import com.example.compass.dto.GenericResponse;
+import com.example.compass.dto.UserDTO;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@CrossOrigin
+@RequestMapping("/api/v1")
+public class UserController {
+
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello, World!";
+    }
+
 //    private final UserServices userServices;
 //
 //    public UserController(UserServices userServices) {
@@ -52,5 +55,5 @@
 //    }
 //
 //
-//
-//}
+
+}
